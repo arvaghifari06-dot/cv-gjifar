@@ -1,0 +1,27 @@
+/* Tambahan gaya halaman admin (memakai variabel dari ../style.css) */
+.adm{max-width:1000px;margin:0 auto;padding:78px 20px 50px;position:relative;z-index:1;}
+.adm .frame{padding:36px 36px 32px;}
+.adm h1{font-family:var(--display);font-size:clamp(30px,4vw,46px);color:var(--blue);margin:18px 0 6px;letter-spacing:.02em;}
+.adm .sub{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.06em;margin:0 0 22px;}
+.adm-actions{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px;}
+table.tbl{width:100%;border-collapse:collapse;font-size:14px;}
+table.tbl th{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-align:left;background:var(--ink);color:var(--paper);padding:10px 12px;}
+table.tbl td{padding:12px;border-bottom:1px solid rgba(20,18,16,.22);vertical-align:top;}
+table.tbl .aksi{display:flex;gap:8px;align-items:center;}
+table.tbl form{margin:0;}
+.chip.danger{background:var(--red);color:var(--paper);}
+.login-box{max-width:420px;margin:0 auto;padding-top:90px;position:relative;z-index:1;}
+.login-box .frame{padding:36px 32px 30px;}
+.msg{border:2px solid var(--ink);padding:12px 14px;font-size:14px;margin:0 0 18px;}
+.msg.ok{background:var(--amber);}
+.msg.bad{background:var(--red);color:var(--paper);}
+.fgroup{margin-bottom:16px;}
+.pesan-item{border:2px solid var(--ink);padding:16px 18px;margin-bottom:16px;background:var(--paper);}
+.pesan-item .meta{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.06em;margin-bottom:8px;}
+.pesan-item p{margin:8px 0 0;max-width:none;}
+input[type=number],input[type=password]{width:100%;font-family:var(--body);font-size:14px;color:var(--ink);background:var(--paper);border:2px solid var(--ink);padding:10px 12px;border-radius:0;}
+
+/* Tambahan migrasi Laravel: tombol logout (POST + CSRF) tampil seperti link navigasi */
+.topnav form{margin:0;display:inline;}
+.topnav .linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--paper);letter-spacing:.14em;cursor:pointer;}
+.topnav .linkbtn:hover,.topnav .linkbtn:focus-visible{color:var(--amber);}
